@@ -1,6 +1,9 @@
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable no-undef */
+
 import MenuItem from "../menu-item/menu-item.component"
 import "./directory.styles.scss"
-import React from "react"
+
 
 
 class Directory extends React.Component {
@@ -43,6 +46,7 @@ class Directory extends React.Component {
 			 ]
 		}
 	}
+
 	render(){
 	return(
 		<div className="directory-menu">

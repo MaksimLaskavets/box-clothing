@@ -1,0 +1,43 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:react/jsx-runtime",
+		"plugin:react-hooks/recommended",
+		"plugin:jsx-a11y/recommended",
+		"plugin:import/recommended",
+		"airbnb",
+		"prettier"
+	],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": [
+		"react"
+	],
+	"rules": {
+		"react/jsx-filename-extension": [1, {"extensions": [".js", ".jsx"]}],
+    "react/state-in-constructor": [0],
+    "react-native/no-inline-styles": [0],
+    "react/jsx-props-no-spreading": [0],
+    "import/prefer-default-export": "off",
+    "react-hooks/exhaustive-deps": "off",
+		"linebreak-style": ["error", "windows"],
+		"react/react-in-jsx-scope": "off",
+		"react/function-component-definition": [
+			2,
+			{
+			  "namedComponents": "arrow-function",
+			  "unnamedComponents": "arrow-function"
+			}
+		 ]
+	}
+}

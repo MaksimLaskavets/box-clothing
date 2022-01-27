@@ -1,8 +1,10 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
+
+
 import "./collection-item.styles.scss"
 
-const CollectionItem=({id,imageUrl,name,price})=>{
-	return <div className="collection-item">
+const CollectionItem = ({id,imageUrl,name,price}) => <div className="collection-item">
 			 <div className="image"
 			 style={{
 				 backgroundImage:`url(${imageUrl})`
@@ -12,7 +14,5 @@ const CollectionItem=({id,imageUrl,name,price})=>{
 				 <span className="price">{price}</span>
 			 </div>
 		</div>
-	
-}
 
 export default CollectionItem

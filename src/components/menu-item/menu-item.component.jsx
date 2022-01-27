@@ -1,9 +1,12 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 
-import "./menu-item.styles.scss"
+
 import { withRouter } from "react-router-dom"
+import "./menu-item.styles.scss"
 
-const MenuItem = ({title,imageUrl,size,history,linkUrl,match})=>{
-	return(
+const MenuItem = ({title,imageUrl,size,history,linkUrl,match})=>(
 		<div className={`${size} menu-item`} onClick={()=>history.push(`${match.url}${linkUrl}`)}>
 			<div className="background-image" style={{
 			backgroundImage:`url(${imageUrl})`
@@ -14,5 +17,4 @@ const MenuItem = ({title,imageUrl,size,history,linkUrl,match})=>{
 			</div>
 		</div>
 	)
-}
   export default withRouter(MenuItem)
