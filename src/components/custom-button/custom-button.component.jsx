@@ -1,12 +1,12 @@
-/* eslint-disable react/button-has-type */
-/* eslint-disable react/prop-types */
-import React from "react";
-import "./custom-button.styles.scss"
+import React from 'react';
+import './custom-button.styles.scss';
 
-function CustomButton({children,...otherProps}) {
-return <button className="custom-button" {...otherProps} >
-{children}
-</button>
+function CustomButton({ children, isGoogleSignIn, ...otherProps }) {
+  return (
+    <button type="button" className={`${isGoogleSignIn ? 'google-sign-in' : ''} custom-button`} {...otherProps}>
+      {children}
+    </button>
+  );
 }
 
-export default CustomButton
+export default CustomButton;
