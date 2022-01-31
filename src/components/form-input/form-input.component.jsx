@@ -5,7 +5,7 @@ function FormInput({ handleChange, label, ...otherProps }) {
   return (
     <div className="group">
       <input className="form-input" onChange={handleChange} {...otherProps} />
-      {/* have a questions */}
+      {/*  questions */}
       {label ? (
         <label
           className={`${
@@ -18,5 +18,4 @@ function FormInput({ handleChange, label, ...otherProps }) {
     </div>
   );
 }
-
 export default FormInput;

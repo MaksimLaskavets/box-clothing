@@ -15,5 +15,4 @@ function CollectionPreview({ title, items }) {
     </div>
   );
 }
-
 export default CollectionPreview;

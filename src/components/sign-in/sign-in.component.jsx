@@ -7,7 +7,6 @@ import './sign-in.styles.scss';
 class SignIn extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = {
       email: '',
       password: '',
@@ -16,7 +15,6 @@ class SignIn extends React.Component {
 
   handleSubmit = async (event) => {
     event.preventDefault();
-
 	 const { email, password } = this.state;
 	 try {
 		 await auth.signInWithEmailAndPassword(email, password);
@@ -27,18 +25,15 @@ class SignIn extends React.Component {
   };
 
   handleChange = (event) => {
-    // questions
     const { name, value } = event.target;
-
     this.setState({ [name]: value });
   };
 
   render() {
     return (
       <div className="sign-in">
-        <h1>I already have an account</h1>
+        <h2 className="title">I already have an account</h2>
         <span>Sign in with your email and password</span>
-
         <form onSubmit={this.handleSubmit}>
           <FormInput
             handleChange={this.handleChange}
@@ -67,5 +62,4 @@ class SignIn extends React.Component {
     );
   }
 }
-
 export default SignIn;
