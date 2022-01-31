@@ -30,6 +30,7 @@ module.exports = {
     'react/prop-types': 'off',
     'no-use-before-define': ['error', { variables: false }],
 	 'no-mixed-spaces-and-tabs': [2, 'smart-tabs'],
+	 'no-shadow': 'off',
     'react/destructuring-assignment': [1, 'always', { ignoreClassFields: true }],
     'react/sort-comp': [
       2,
