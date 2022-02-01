@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+
 import './menu-item.styles.scss';
 
 function MenuItem({
@@ -20,4 +21,5 @@ function MenuItem({
     </div>
   );
 }
+
 export default withRouter(MenuItem);

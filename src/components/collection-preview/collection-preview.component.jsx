@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
 
 import React from 'react';
+
 import CollectionItem from '../collection-item/collection-item.component';
+
 import './collection-preview.styles.scss';
 
 function CollectionPreview({ title, items }) {
@@ -15,4 +17,5 @@ function CollectionPreview({ title, items }) {
     </div>
   );
 }
+
 export default CollectionPreview;

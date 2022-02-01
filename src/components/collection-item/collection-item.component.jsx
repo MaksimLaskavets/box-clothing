@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './collection-item.styles.scss';
 
 function CollectionItem({
@@ -17,4 +18,5 @@ function CollectionItem({
     </div>
   );
 }
+
 export default CollectionItem;

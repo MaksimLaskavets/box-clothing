@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './custom-button.styles.scss';
 
 function CustomButton({ children, isGoogleSignIn, ...otherProps }) {
@@ -8,4 +9,5 @@ function CustomButton({ children, isGoogleSignIn, ...otherProps }) {
     </button>
   );
 }
+
 export default CustomButton;
