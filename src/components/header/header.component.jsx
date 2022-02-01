@@ -15,7 +15,7 @@ function Header({ currentUser }) {
         <Link className="option" to="/shop">
           SHOP
         </Link>
-        <Link className="option" to="/shop">
+        <Link link className="option" to="/shop">
           CONTACT
         </Link>
         { currentUser
