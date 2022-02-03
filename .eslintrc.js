@@ -19,7 +19,7 @@ module.exports = {
   rules: {
     'jsx-a11y/label-has-associated-control': 'off',
     'jsx-a11y/label-has-for': 'off',
-	 'linebreak-style': ['error', 'windows'],
+	 'linebreak-style': 0,
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/state-in-constructor': [0],
     'react-native/no-inline-styles': [0],
