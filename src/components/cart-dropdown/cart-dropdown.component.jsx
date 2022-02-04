@@ -15,8 +15,8 @@ function CartDropdown({ cartItems, history, dispatch }) {
     <div className="cart-dropdown">
       <div className="cart-items">
         {cartItems.length
-		  ? cartItems.map((cartItem) => <CartItem id={cartItem.id} item={cartItem} />)
-		  : <span className="empty-page">Your cart is empty</span>}
+          ? cartItems.map((cartItem) => <CartItem id={cartItem.id} item={cartItem} />)
+          : <span className="empty-page">Your cart is empty</span>}
       </div>
       <CustomButton onClick={() => {
         history.push('/checkout');
@@ -24,7 +24,6 @@ function CartDropdown({ cartItems, history, dispatch }) {
       }}
       >
         GO TO CHECKOUT
-
       </CustomButton>
     </div>
   );
